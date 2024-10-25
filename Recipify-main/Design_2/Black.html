@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipify</title>
+    <link rel="stylesheet" href="Black.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/6710/6710068.png" alt="Recipify Logo">
+            <h2>Recipify</h2>
+        </div>
+        <nav>
+            <a href="../Design/Recipify.html">Home</a>
+            <a href="../About/about.html">About</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Step 1: Add Ingredients -->
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h1>Add Available Ingredients</h1>
+                <p>Simply type the name of ingredients you have in the search bar to add them.</p>
+                <div class="ingredients" id="ingredientsContainer"></div>
+                <input type="text" placeholder="Search or Add Ingredients" class="ingredient-search" id="ingredientInput" onkeyup="addIngredient(event)">
+            </div>
+        </div>
+
+        <!-- Step 2: Choose Food -->
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h1>What Are You Cooking ?</h1>
+                <p>Recipify recommends recipes that are suitable for the meal you selected.</p>
+                <select class="meal-select">
+                    <option value="breakfast">Have Breakfast</option>
+                    <option value="lunch">Have Lunch</option>
+                    <option value="dinner">Have Dinner</option>
+                    <option value="snack">Have a Snack</option>
+                    <option value="dessert">Have Dessert</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Step 3: Choose Kitchen Equipment -->
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h1>Select Available Kitchen Appliances</h1>
+                <p>This prevents Recipify from suggesting recipes which ask for equipments that you don't have or don't want to use.</p>
+                <div class="equipment-list">
+                    <label class="switch">                        
+                        <input type="checkbox"> Stove
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Frying Pan
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Microwave
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Air Fryer
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Barbeque Grill
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked> Blender
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Kettle
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Pressure Cooker
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Choose Time -->
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h1>Select Time Constraints</h1>
+                <p>Recipify will recommend recipes that are well within your time constraints.</p>
+                <select class="meal-select">
+                    <option value="quick">Quick (10 Min)</option>
+                    <option value="medium">Medium (30 Min)</option>
+                    <option value="quisine">Quisine (1 Hr+)</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Step 5: Choose Experience -->
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h1>How Experienced Are You ?</h1>
+                <p>Skill based Matchmaking more like Skill based Cooking Recipes.</p>
+                <select class="meal-select">
+                    <option value="rookie">Rookie</option>
+                    <option value="novice">Novice</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="fancy" id="generate-button">
+                <span class="top-key"></span>
+                <a href="../Design_2/Black.html" target="_blank" id="">Generate Recipe</a>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </button>
+        </div>
+    </div>
+    <script src="Black.js"></script>
+
+</body>
+</html>

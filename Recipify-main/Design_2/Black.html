@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipify</title>
+    <link rel="stylesheet" href="Black.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn-icons-png.flaticon.com/512/6710/6710068.png" alt="Recipify Logo">
+            <h2>Recipify</h2>
+        </div>
+        <nav>
+            <a href="../Design/Recipify.html">Home</a>
+            <a href="../About/about.html">About</a>
+        </nav>
+    </header>
+    <div class="container">
+        <!-- Step 1: Add Ingredients -->
+        <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <h2>Add the ingredients you have at home.</h2>
+                <p>You can choose an ingredient from the list or from your saved inventory.</p>
+                <p class="instruction">Remember: if an ingredient is not available in the default list, simply type its name in the search bar and add it.</p>
+                <div class="ingredients" id="ingredientsContainer"></div>
+                <input type="text" placeholder="Search or add Ingredients" class="ingredient-search" id="ingredientInput" onkeyup="addIngredient(event)">
+            </div>
+        </div>
+
+        <!-- Step 2: Choose Food -->
+        <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <h2>Choose what food you want to cook.</h2>
+                <p>You can choose Breakfast, Lunch, Snack, or Dinner.</p>
+                <p>PantryChef will then recommend recipes that are suitable for the meal you selected.</p>
+                <select class="meal-select">
+                    <option value="breakfast">Have breakfast</option>
+                    <option value="lunch">Have lunch</option>
+                    <option value="snack">Have a snack</option>
+                    <option value="dinner">Have dinner</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Step 3: Choose Kitchen Equipment -->
+        <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <h2>Choose the kitchen equipment you have.</h2>
+                <p>Select kitchen equipment that you have or want to use.</p>
+                <p>This will prevent PantryChef from recommending recipes using equipment that you don't have or don't want to use.</p>
+                <div class="equipment-list">
+                    <label class="switch">
+                        <input type="checkbox"> Stove
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Oven
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Microwave
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Air Grill
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Sous Vide Machine
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox" checked> Blender
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Food Processor
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> BBQ Grill
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Slow Roast
+                        <span class="slider"></span>
+                    </label>
+                    <label class="switch">
+                        <input type="checkbox"> Pressure Cooker
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Choose Time -->
+        <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <h2>Choose how much time you have.</h2>
+                <p>Choose 5 minutes if you’re in a hurry or longer if you have time.</p>
+                <p>This will prevent PantryChef from recommending recipes that take too long to prepare.</p>
+                <div class="time-slider">
+                    <input type="range" min="5" max="120" value="5">
+                    <span>⏰ 5 minutes</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5: Choose Experience -->
+        <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <h2>Choose how much experience you have with cooking.</h2>
+                <p>You can choose Rookie, Novice or Expert.</p>
+                <p>Recipify will recommend recipes that suit your skill level.</p>
+                <select class="meal-select">
+                    <option value="rookie">Rookie</option>
+                    <option value="novice">Novice</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+        </div>
+        <div class="button-container">
+            <button class="fancy" id="get-started-btn">
+                <span class="top-key"></span>
+                <a href="../Design_2/Black.html" target="_blank" id="">Let's Get Started</a>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </button>
+        </div>
+    </div>
+
+    </div>
+    <script src="Black.js"></script>
+</body>
+</html>

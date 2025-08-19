@@ -1,3 +1,5 @@
+Recipify Project Documentation
+
 1. Project Overview
 Recipify is an AI-powered web application designed to streamline meal preparation by curating recipes based on available ingredients and providing nutritional breakdowns. Unlike many existing solutions, Recipify offers multiple recipe suggestions, maximizing user options and fostering a creative cooking experience. The app helps users reduce food waste, manage dietary needs, and explore new meal ideas with ease.
 
